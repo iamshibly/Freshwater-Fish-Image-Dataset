@@ -1,0 +1,106 @@
+======================================================================
+NESTED CROSS-VALIDATION REPORT
+Bangladesh Fish Dataset - Data in Brief Publication
+======================================================================
+
+MODEL INFORMATION
+----------------------------------------------------------------------
+Model: MobileNetV3-Small (Pretrained on ImageNet)
+Parameters: 1,359,671
+Outer Folds: 5
+Inner Folds: 2
+Total Training Time: 5:02:31
+Device: mps
+
+HYPERPARAMETER SEARCH SPACE
+----------------------------------------------------------------------
+  Config_1: lr=0.0001, wd=0.0001, epochs=4, dropout=0.3, ls=0.1
+  Config_2: lr=0.0003, wd=1e-05, epochs=4, dropout=0.4, ls=0.05
+  Config_3: lr=0.0005, wd=5e-05, epochs=3, dropout=0.35, ls=0.1
+
+AGGREGATED RESULTS (Mean ± Std)
+----------------------------------------------------------------------
+Metric                          Mean        Std                    95% CI
+----------------------------------------------------------------------
+accuracy                      0.9822     0.0106 [0.9730, 0.9915]
+balanced_accuracy             0.9803     0.0113 [0.9704, 0.9902]
+macro_f1                      0.9748     0.0122 [0.9641, 0.9855]
+weighted_f1                   0.9823     0.0106 [0.9730, 0.9916]
+macro_precision               0.9737     0.0102 [0.9648, 0.9827]
+macro_recall                  0.9803     0.0113 [0.9704, 0.9902]
+
+PER-FOLD RESULTS
+----------------------------------------------------------------------
+Fold   Config         Accuracy    Bal Acc   Macro F1
+----------------------------------------------------------------------
+1      Config_3         0.9918     0.9925     0.9845
+2      Config_3         0.9946     0.9906     0.9884
+3      Config_2         0.9674     0.9656     0.9560
+4      Config_3         0.9846     0.9847     0.9797
+5      Config_3         0.9728     0.9682     0.9654
+
+HYPERPARAMETER SELECTION
+----------------------------------------------------------------------
+Fold 1: Config_3 (Inner CV: 91.14% ± 2.83%)
+Fold 2: Config_3 (Inner CV: 91.21% ± 2.90%)
+Fold 3: Config_2 (Inner CV: 92.73% ± 1.47%)
+Fold 4: Config_3 (Inner CV: 91.60% ± 4.83%)
+Fold 5: Config_3 (Inner CV: 92.82% ± 2.33%)
+
+CLASSIFICATION REPORT
+----------------------------------------------------------------------
+                                         precision    recall  f1-score   support
+
+             Bacha (Pangasius bocourti)       1.00      1.00      1.00       763
+           Baim (Mastacembelus armatus)       1.00      0.98      0.99       175
+             Bele (Glossogobius giuris)       1.00      0.95      0.97       316
+            Chada (Pseudambassis ranga)       0.84      1.00      0.91       183
+         Cheng (Channa harcourtbutleri)       1.00      1.00      1.00       682
+                 Dairka(Esomus danrica)       0.99      0.97      0.98       187
+                   Dhaira (Botia dario)       1.00      1.00      1.00       220
+Dhyala-pithali (Osteobrama cotio cotio)       0.99      1.00      0.99       256
+                 Fasa (Setipinna phasa)       0.98      0.99      0.98       120
+                  Goti (Channa striata)       0.93      0.95      0.94        43
+         Guchi (Mastacembelus pancalus)       0.89      1.00      0.94        59
+                Itha (velvet catfishes)       1.00      1.00      1.00        58
+            Kakila (Xenentodon cancila)       0.96      1.00      0.98       154
+                      Khori (Gonialosa)       0.95      0.95      0.95       234
+         Mohola (Amblypharyngodon mola)       0.87      1.00      0.93        61
+                    Pabda (Ompok pabda)       1.00      0.99      1.00       299
+              Piyali (Aspidoparia jaya)       0.99      0.93      0.96       237
+                Puthi (Puntius sophore)       0.99      0.85      0.92       216
+                  Rewa (Cirrhinus reba)       0.98      1.00      0.99       171
+                     Veda (Nundus Meni)       1.00      0.99      0.99       268
+     jiyol(-) (Heteropneustes fossilis)       1.00      1.00      1.00       317
+               koi (Anabas testudineus)       0.98      1.00      0.99       211
+         paloa tengra (Batasio tengana)       0.98      0.99      0.99       289
+
+                               accuracy                           0.98      5519
+                              macro avg       0.97      0.98      0.97      5519
+                           weighted avg       0.98      0.98      0.98      5519
+
+CLASS INFORMATION
+----------------------------------------------------------------------
+[ 0] Bacha (Pangasius bocourti)               n= 763  F1=0.999
+[ 1] Baim (Mastacembelus armatus)             n= 175  F1=0.991
+[ 2] Bele (Glossogobius giuris)               n= 316  F1=0.972
+[ 3] Chada (Pseudambassis ranga)              n= 183  F1=0.913
+[ 4] Cheng (Channa harcourtbutleri)           n= 682  F1=0.998
+[ 5] Dairka(Esomus danrica)                   n= 187  F1=0.984
+[ 6] Dhaira (Botia dario)                     n= 220  F1=0.998
+[ 7] Dhyala-pithali (Osteobrama cotio cotio)  n= 256  F1=0.994
+[ 8] Fasa (Setipinna phasa)                   n= 120  F1=0.983
+[ 9] Goti (Channa striata)                    n=  43  F1=0.943
+[10] Guchi (Mastacembelus pancalus)           n=  59  F1=0.944
+[11] Itha (velvet catfishes)                  n=  58  F1=1.000
+[12] Kakila (Xenentodon cancila)              n= 154  F1=0.981
+[13] Khori (Gonialosa)                        n= 234  F1=0.953
+[14] Mohola (Amblypharyngodon mola)           n=  61  F1=0.931
+[15] Pabda (Ompok pabda)                      n= 299  F1=0.997
+[16] Piyali (Aspidoparia jaya)                n= 237  F1=0.959
+[17] Puthi (Puntius sophore)                  n= 216  F1=0.915
+[18] Rewa (Cirrhinus reba)                    n= 171  F1=0.988
+[19] Veda (Nundus Meni)                       n= 268  F1=0.994
+[20] jiyol(-) (Heteropneustes fossilis)       n= 317  F1=0.998
+[21] koi (Anabas testudineus)                 n= 211  F1=0.991
+[22] paloa tengra (Batasio tengana)           n= 289  F1=0.988
