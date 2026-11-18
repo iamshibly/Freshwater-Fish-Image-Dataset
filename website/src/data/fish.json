@@ -1,0 +1,582 @@
+[
+ {
+  "id": 1,
+  "slug": "bacha",
+  "name": "Bacha",
+  "sci": "Eutropiichthys vacha",
+  "raw": 763,
+  "aug": 1526,
+  "f1": 0.999,
+  "nut": {
+   "energy": 485.0,
+   "protein": 16.2,
+   "fat": 5.4,
+   "vitA": 15.0,
+   "vitB12": null,
+   "calcium": 210.0,
+   "phosphorus": 250.0,
+   "potassium": 310.0,
+   "sodium": 75.0,
+   "iron": 1.2,
+   "omega3": 0.35,
+   "omega6": 0.18
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 2,
+  "slug": "baim",
+  "name": "Baim (Large)",
+  "sci": "Mastacembelus armatus",
+  "raw": 175,
+  "aug": 700,
+  "f1": 0.991,
+  "nut": {
+   "energy": 418.0,
+   "protein": 18.0,
+   "fat": 2.2,
+   "vitA": 20.0,
+   "vitB12": 1.5,
+   "calcium": 320.0,
+   "phosphorus": 280.0,
+   "potassium": 340.0,
+   "sodium": 80.0,
+   "iron": 1.8,
+   "omega3": 0.12,
+   "omega6": 0.08
+  },
+  "flags": {}
+ },
+ {
+  "id": 3,
+  "slug": "bele",
+  "name": "Bele",
+  "sci": "Glossogobius giuris",
+  "raw": 316,
+  "aug": 1264,
+  "f1": 0.972,
+  "nut": {
+   "energy": 385.0,
+   "protein": 16.8,
+   "fat": 1.2,
+   "vitA": 12.0,
+   "vitB12": null,
+   "calcium": 310.0,
+   "phosphorus": 260.0,
+   "potassium": 320.0,
+   "sodium": 85.0,
+   "iron": 1.5,
+   "omega3": 0.08,
+   "omega6": 0.05
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 4,
+  "slug": "chanda",
+  "name": "Chanda",
+  "sci": "Chanda nama",
+  "raw": 183,
+  "aug": 732,
+  "f1": 0.913,
+  "nut": {
+   "energy": 402.0,
+   "protein": 16.5,
+   "fat": 2.8,
+   "vitA": 35.0,
+   "vitB12": 0.8,
+   "calcium": 1160.0,
+   "phosphorus": 520.0,
+   "potassium": 280.0,
+   "sodium": 90.0,
+   "iron": 6.8,
+   "omega3": 0.15,
+   "omega6": 0.09
+  },
+  "flags": {}
+ },
+ {
+  "id": 5,
+  "slug": "cheng",
+  "name": "Cheng",
+  "sci": "Channa orientalis",
+  "raw": 683,
+  "aug": 2046,
+  "f1": 0.998,
+  "nut": {
+   "energy": 390.0,
+   "protein": 18.2,
+   "fat": 1.1,
+   "vitA": 15.0,
+   "vitB12": null,
+   "calcium": 410.0,
+   "phosphorus": 300.0,
+   "potassium": 350.0,
+   "sodium": 70.0,
+   "iron": 1.1,
+   "omega3": 0.07,
+   "omega6": 0.04
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 6,
+  "slug": "dairka",
+  "name": "Darkina",
+  "sci": "Esomus danricus",
+  "raw": 187,
+  "aug": 748,
+  "f1": 0.984,
+  "nut": {
+   "energy": 435.0,
+   "protein": 15.2,
+   "fat": 4.5,
+   "vitA": 450.0,
+   "vitB12": 0.9,
+   "calcium": 890.0,
+   "phosphorus": 510.0,
+   "potassium": 290.0,
+   "sodium": 95.0,
+   "iron": 8.1,
+   "omega3": 0.38,
+   "omega6": 0.22
+  },
+  "flags": {}
+ },
+ {
+  "id": 7,
+  "slug": "dhaira",
+  "name": "Dhaira",
+  "sci": "Puntius guganio",
+  "raw": 220,
+  "aug": 880,
+  "f1": 0.998,
+  "nut": {
+   "energy": 460.0,
+   "protein": 17.5,
+   "fat": 3.2,
+   "vitA": 22.0,
+   "vitB12": null,
+   "calcium": 380.0,
+   "phosphorus": 310.0,
+   "potassium": 320.0,
+   "sodium": 78.0,
+   "iron": 1.6,
+   "omega3": 0.18,
+   "omega6": 0.1
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 8,
+  "slug": "dhyala-pithali",
+  "name": "Dhela / Pithali",
+  "sci": "Osteobrama cotio cotio",
+  "raw": 256,
+  "aug": 1024,
+  "f1": 0.994,
+  "nut": {
+   "energy": 410.0,
+   "protein": 15.5,
+   "fat": 3.8,
+   "vitA": 930.0,
+   "vitB12": 1.2,
+   "calcium": 1250.0,
+   "phosphorus": 580.0,
+   "potassium": 300.0,
+   "sodium": 85.0,
+   "iron": 4.2,
+   "omega3": 0.42,
+   "omega6": 0.14
+  },
+  "flags": {}
+ },
+ {
+  "id": 9,
+  "slug": "fasa",
+  "name": "Fasha",
+  "sci": "Setipinna phasa",
+  "raw": 120,
+  "aug": 480,
+  "f1": 0.983,
+  "nut": {
+   "energy": 510.0,
+   "protein": 18.4,
+   "fat": 5.2,
+   "vitA": 18.0,
+   "vitB12": null,
+   "calcium": 450.0,
+   "phosphorus": 340.0,
+   "potassium": 315.0,
+   "sodium": 88.0,
+   "iron": 2.1,
+   "omega3": 0.55,
+   "omega6": 0.25
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 10,
+  "slug": "goti",
+  "name": "Goti / Shol",
+  "sci": "Channa striata",
+  "raw": 43,
+  "aug": 172,
+  "f1": 0.943,
+  "nut": {
+   "energy": 394.0,
+   "protein": 18.5,
+   "fat": 1.2,
+   "vitA": 10.0,
+   "vitB12": 1.1,
+   "calcium": 420.0,
+   "phosphorus": 310.0,
+   "potassium": 360.0,
+   "sodium": 65.0,
+   "iron": 0.9,
+   "omega3": 0.1,
+   "omega6": 0.06
+  },
+  "flags": {}
+ },
+ {
+  "id": 11,
+  "slug": "guchi",
+  "name": "Guchi Baim",
+  "sci": "Mastacembelus pancalus",
+  "raw": 59,
+  "aug": 236,
+  "f1": 0.944,
+  "nut": {
+   "energy": 398.0,
+   "protein": 17.2,
+   "fat": 1.8,
+   "vitA": 18.0,
+   "vitB12": null,
+   "calcium": 280.0,
+   "phosphorus": 240.0,
+   "potassium": 330.0,
+   "sodium": 82.0,
+   "iron": 1.4,
+   "omega3": 0.11,
+   "omega6": 0.07
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 12,
+  "slug": "itha",
+  "name": "Itha",
+  "sci": "Mystus cavasius",
+  "raw": 58,
+  "aug": 232,
+  "f1": 1.0,
+  "nut": {
+   "energy": 440.0,
+   "protein": 17.8,
+   "fat": 2.8,
+   "vitA": 14.0,
+   "vitB12": null,
+   "calcium": 240.0,
+   "phosphorus": 230.0,
+   "potassium": 310.0,
+   "sodium": 70.0,
+   "iron": 1.5,
+   "omega3": 0.14,
+   "omega6": 0.11
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 13,
+  "slug": "jiyol",
+  "name": "Shing / Jiyol",
+  "sci": "Heteropneustes fossilis",
+  "raw": 317,
+  "aug": 1268,
+  "f1": 0.998,
+  "nut": {
+   "energy": 519.0,
+   "protein": 15.5,
+   "fat": 6.5,
+   "vitA": null,
+   "vitB12": 1.8,
+   "calcium": 610.0,
+   "phosphorus": 380.0,
+   "potassium": 340.0,
+   "sodium": 72.0,
+   "iron": 2.4,
+   "omega3": 0.48,
+   "omega6": 0.52
+  },
+  "flags": {
+   "vitA": "Trace"
+  }
+ },
+ {
+  "id": 14,
+  "slug": "kakila",
+  "name": "Kakila",
+  "sci": "Xenentodon cancila",
+  "raw": 154,
+  "aug": 616,
+  "f1": 0.981,
+  "nut": {
+   "energy": 380.0,
+   "protein": 18.1,
+   "fat": 0.9,
+   "vitA": 15.0,
+   "vitB12": null,
+   "calcium": 520.0,
+   "phosphorus": 390.0,
+   "potassium": 380.0,
+   "sodium": 92.0,
+   "iron": 1.8,
+   "omega3": 0.06,
+   "omega6": 0.03
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 15,
+  "slug": "khori",
+  "name": "Khori",
+  "sci": "Gonialosa manmina",
+  "raw": 234,
+  "aug": 936,
+  "f1": 0.953,
+  "nut": {
+   "energy": 490.0,
+   "protein": 16.8,
+   "fat": 5.1,
+   "vitA": 25.0,
+   "vitB12": null,
+   "calcium": 410.0,
+   "phosphorus": 320.0,
+   "potassium": 300.0,
+   "sodium": 80.0,
+   "iron": 2.0,
+   "omega3": 0.22,
+   "omega6": 0.15
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 16,
+  "slug": "koi",
+  "name": "Koi",
+  "sci": "Anabas testudineus",
+  "raw": 211,
+  "aug": 844,
+  "f1": 0.991,
+  "nut": {
+   "energy": 619.0,
+   "protein": 14.8,
+   "fat": 9.2,
+   "vitA": 42.0,
+   "vitB12": 2.1,
+   "calcium": 415.0,
+   "phosphorus": 345.0,
+   "potassium": 330.0,
+   "sodium": 75.0,
+   "iron": 2.6,
+   "omega3": 0.32,
+   "omega6": 0.58
+  },
+  "flags": {}
+ },
+ {
+  "id": 17,
+  "slug": "mohola",
+  "name": "Mohola / Mola",
+  "sci": "Amblypharyngodon mola",
+  "raw": 61,
+  "aug": 244,
+  "f1": 0.931,
+  "nut": {
+   "energy": 414.0,
+   "protein": 15.2,
+   "fat": 4.1,
+   "vitA": 2500.0,
+   "vitB12": 1.5,
+   "calcium": 1000.0,
+   "phosphorus": 550.0,
+   "potassium": 320.0,
+   "sodium": 90.0,
+   "iron": 5.8,
+   "omega3": 0.45,
+   "omega6": 0.16
+  },
+  "flags": {}
+ },
+ {
+  "id": 18,
+  "slug": "pabda",
+  "name": "Pabda",
+  "sci": "Ompok pabda",
+  "raw": 299,
+  "aug": 1196,
+  "f1": 0.997,
+  "nut": {
+   "energy": 439.0,
+   "protein": 19.2,
+   "fat": 2.1,
+   "vitA": 55.0,
+   "vitB12": 1.2,
+   "calcium": 360.0,
+   "phosphorus": 290.0,
+   "potassium": 350.0,
+   "sodium": 74.0,
+   "iron": 1.4,
+   "omega3": 0.3,
+   "omega6": 0.12
+  },
+  "flags": {}
+ },
+ {
+  "id": 19,
+  "slug": "paloa-tengra",
+  "name": "Paloa Tengra",
+  "sci": "Batasio tengana",
+  "raw": 237,
+  "aug": 948,
+  "f1": 0.988,
+  "nut": {
+   "energy": 460.0,
+   "protein": 17.1,
+   "fat": 3.8,
+   "vitA": 32.0,
+   "vitB12": null,
+   "calcium": 280.0,
+   "phosphorus": 260.0,
+   "potassium": 340.0,
+   "sodium": 85.0,
+   "iron": 2.1,
+   "omega3": 0.2,
+   "omega6": 0.15
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 20,
+  "slug": "piyali",
+  "name": "Piyali",
+  "sci": "Aspidoparia jaya",
+  "raw": 289,
+  "aug": 1156,
+  "f1": 0.959,
+  "nut": {
+   "energy": 425.0,
+   "protein": 16.4,
+   "fat": 3.5,
+   "vitA": 20.0,
+   "vitB12": null,
+   "calcium": 480.0,
+   "phosphorus": 360.0,
+   "potassium": 310.0,
+   "sodium": 85.0,
+   "iron": 2.1,
+   "omega3": 0.18,
+   "omega6": 0.14
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 21,
+  "slug": "puthi",
+  "name": "Puthi",
+  "sci": "Puntius sophore",
+  "raw": 216,
+  "aug": 864,
+  "f1": 0.915,
+  "nut": {
+   "energy": 448.0,
+   "protein": 16.8,
+   "fat": 4.2,
+   "vitA": 38.0,
+   "vitB12": 0.8,
+   "calcium": 780.0,
+   "phosphorus": 490.0,
+   "potassium": 310.0,
+   "sodium": 95.0,
+   "iron": 4.6,
+   "omega3": 0.28,
+   "omega6": 0.18
+  },
+  "flags": {}
+ },
+ {
+  "id": 22,
+  "slug": "rewa",
+  "name": "Rewa",
+  "sci": "Cirrhinus reba",
+  "raw": 171,
+  "aug": 684,
+  "f1": 0.988,
+  "nut": {
+   "energy": 430.0,
+   "protein": 17.0,
+   "fat": 3.2,
+   "vitA": 18.0,
+   "vitB12": null,
+   "calcium": 410.0,
+   "phosphorus": 330.0,
+   "potassium": 320.0,
+   "sodium": 80.0,
+   "iron": 1.9,
+   "omega3": 0.15,
+   "omega6": 0.12
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ },
+ {
+  "id": 23,
+  "slug": "veda",
+  "name": "Veda",
+  "sci": "Nandus nandus",
+  "raw": 268,
+  "aug": 1072,
+  "f1": 0.994,
+  "nut": {
+   "energy": 405.0,
+   "protein": 17.5,
+   "fat": 2.1,
+   "vitA": 14.0,
+   "vitB12": null,
+   "calcium": 350.0,
+   "phosphorus": 280.0,
+   "potassium": 340.0,
+   "sodium": 78.0,
+   "iron": 1.4,
+   "omega3": 0.12,
+   "omega6": 0.09
+  },
+  "flags": {
+   "vitB12": "ND"
+  }
+ }
+]

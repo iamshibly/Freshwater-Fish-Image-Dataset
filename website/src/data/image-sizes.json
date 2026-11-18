@@ -1,0 +1,210 @@
+{
+ "bacha": [
+  1100,
+  585
+ ],
+ "baim": [
+  1100,
+  554
+ ],
+ "bele": [
+  1100,
+  459
+ ],
+ "chanda": [
+  1100,
+  615
+ ],
+ "cheng": [
+  1100,
+  604
+ ],
+ "dairka": [
+  1082,
+  494
+ ],
+ "dhaira": [
+  1100,
+  573
+ ],
+ "dhyala-pithali": [
+  1100,
+  509
+ ],
+ "fasa": [
+  1100,
+  677
+ ],
+ "goti": [
+  990,
+  590
+ ],
+ "guchi": [
+  1100,
+  370
+ ],
+ "itha": [
+  1100,
+  520
+ ],
+ "jiyol": [
+  1100,
+  455
+ ],
+ "kakila": [
+  1100,
+  505
+ ],
+ "khori": [
+  982,
+  616
+ ],
+ "koi": [
+  942,
+  520
+ ],
+ "mohola": [
+  1100,
+  424
+ ],
+ "pabda": [
+  1100,
+  508
+ ],
+ "paloa-tengra": [
+  1100,
+  459
+ ],
+ "piyali": [
+  588,
+  318
+ ],
+ "puthi": [
+  834,
+  418
+ ],
+ "rewa": [
+  1100,
+  455
+ ],
+ "veda": [
+  788,
+  486
+ ],
+ "plot:cv-performance": [
+  2000,
+  1699
+ ],
+ "plot:cv-confusion": [
+  2200,
+  948
+ ],
+ "plot:cv-hyperparams": [
+  2000,
+  705
+ ],
+ "plot:umap-flowsom": [
+  2200,
+  1575
+ ],
+ "plot:summary": [
+  2400,
+  1752
+ ],
+ "plot:pca": [
+  2000,
+  1370
+ ],
+ "plot:parametric-umap": [
+  2000,
+  1375
+ ],
+ "plot:rna-style": [
+  2200,
+  1799
+ ],
+ "plot:3d-umap": [
+  1800,
+  1402
+ ],
+ "plot:3d-tsne": [
+  1800,
+  1402
+ ],
+ "plot:3d-umap-front": [
+  1400,
+  1433
+ ],
+ "plot:3d-umap-side": [
+  1400,
+  1433
+ ],
+ "plot:3d-umap-back": [
+  1400,
+  1412
+ ],
+ "plot:3d-umap-diagonal": [
+  1400,
+  1433
+ ],
+ "plot:tsne": [
+  1800,
+  1571
+ ],
+ "plot:umap": [
+  1800,
+  1571
+ ],
+ "plot:class-distribution": [
+  2200,
+  900
+ ],
+ "plot:per-class-f1": [
+  2200,
+  900
+ ],
+ "plot:confusion-normalized": [
+  2000,
+  1838
+ ],
+ "plot:confusion-raw": [
+  2000,
+  1832
+ ],
+ "plot:reliability": [
+  1400,
+  1160
+ ],
+ "plot:confidence": [
+  1400,
+  922
+ ],
+ "plot:adversarial-roc": [
+  1400,
+  1160
+ ],
+ "plot:outlier-scores": [
+  1400,
+  788
+ ],
+ "plot:val-metrics": [
+  1400,
+  788
+ ],
+ "plot:train-loss": [
+  1400,
+  788
+ ],
+ "plot:augmentation": [
+  2400,
+  874
+ ],
+ "plot:misclassified": [
+  2400,
+  1614
+ ],
+ "plot:outliers": [
+  2400,
+  1627
+ ]
+}
