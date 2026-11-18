@@ -3,11 +3,12 @@ import { useCallback, useEffect, useState } from "react";
 import { Section } from "./Section";
 
 const N = 15;
-const landscape = new Set([6]); // Table 3 page is rotated to landscape
+const landscape = new Set<number>();
 const titles: Record<number, string> = {
-  1: "Abstract & introduction", 2: "Contributions & related work", 3: "Dataset description", 4: "Species collage", 5: "Class distribution",
-  6: "Nutritional metadata (Table 3)", 7: "Augmentation", 8: "Evaluation protocol", 9: "Nested CV results", 10: "Embeddings & clustering",
-  11: "UMAP & FlowSOM", 12: "Visualisation summary", 13: "Limitations", 14: "Conclusion & availability", 15: "References",
+  1: "Title, authors & abstract", 2: "Introduction & contributions", 3: "Related work & dataset", 4: "Pipeline (Fig. 1)",
+  5: "Species & Table 2", 6: "Nutritional metadata", 7: "Table 3 & data collection", 8: "Augmentation & protocol",
+  9: "Protocol & metrics", 10: "Nested CV (Fig. 3)", 11: "Embeddings (Fig. 4)", 12: "Summary (Fig. 5) & limits",
+  13: "Conclusion & acknowledgements", 14: "Data availability & references", 15: "References",
 };
 const src = (n: number) => `/paper/page-${String(n).padStart(2, "0")}.webp`;
 
@@ -28,7 +29,7 @@ export function PaperViewer() {
   return (
     <Section id="paper" eyebrow="The paper" className="!pt-0"
       title="Read it page by page."
-      intro="The full manuscript, right here — all 15 pages. Use the arrows, the page strip, or tap a page to enlarge it.">
+      intro="The camera-ready manuscript, right here — all 15 pages. Use the arrows, the page strip, or tap a page to enlarge it.">
       <div className="grid gap-6 lg:grid-cols-[1fr_16rem]">
         <div className="card p-3 md:p-5">
           <div className="flex items-center justify-between gap-3 pb-3">

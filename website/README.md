@@ -12,7 +12,8 @@ npm run build && npm start
 ## Where to edit
 | What | File |
 |---|---|
-| Name, conference, authors, Drive/GitHub/paper links, BibTeX | `src/data/site.ts` |
+| Name, conference, authors, Kaggle DOI / Drive mirror / GitHub links, BibTeX | `src/data/site.ts` |
+| Paper pages (camera-ready PDF rendered to WebP) | `public/paper/page-01..15.webp` |
 | Species table, class counts, nutrition values, per-class F1, CV results | `src/data/fish.json`, `src/data/fish.ts` |
 | Page sections | `src/components/*.tsx` |
 | Code shown in the "Code" section | `code/*.py` (also served from `public/downloads/code/`) |
