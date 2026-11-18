@@ -179,7 +179,7 @@
   "id": 8,
   "slug": "dhyala-pithali",
   "name": "Dhela / Pithali",
-  "sci": "Osteobrama cotio cotio",
+  "sci": "Osteobrama cotio",
   "raw": 256,
   "aug": 1024,
   "f1": 0.994,
@@ -456,8 +456,8 @@
   "slug": "paloa-tengra",
   "name": "Paloa Tengra",
   "sci": "Batasio tengana",
-  "raw": 237,
-  "aug": 948,
+  "raw": 289,
+  "aug": 1156,
   "f1": 0.988,
   "nut": {
    "energy": 460.0,
@@ -475,15 +475,16 @@
   },
   "flags": {
    "vitB12": "ND"
-  }
+  },
+  "proxy": "Mystus vittatus"
  },
  {
   "id": 20,
   "slug": "piyali",
   "name": "Piyali",
   "sci": "Aspidoparia jaya",
-  "raw": 289,
-  "aug": 1156,
+  "raw": 237,
+  "aug": 948,
   "f1": 0.959,
   "nut": {
    "energy": 425.0,

@@ -60,7 +60,7 @@ export function Validation() {
   return (
     <Section id="validation" eyebrow="Validation"
       title="Learnable, consistently labelled, and stable across every split."
-      intro="To test the data fairly, a lightweight ImageNet-pretrained MobileNetV3-Small was fine-tuned under nested cross-validation: 5 outer folds estimate final performance, 2 inner folds choose learning rate, weight decay, dropout, label smoothing and epochs.">
+      intro="This is a check on the annotation, not a leaderboard entry. A small ImageNet-pretrained MobileNetV3-Small (1.36 M parameters — little room to memorise 5,520 images) was fine-tuned under stratified nested cross-validation: 5 outer folds measure performance, 2 inner folds choose the hyper-parameters.">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {cv.summary.map((m, i) => (
           <Reveal key={m.label} delay={i * 60}>
@@ -73,7 +73,29 @@ export function Validation() {
           </Reveal>
         ))}
       </div>
-      <p className="mt-4 text-sm text-mist">Mean ± standard deviation over 5 outer folds · {cv.params} parameters · evaluated on the 5,520 raw images.</p>
+      <p className="mt-4 text-sm text-mist">Mean ± standard deviation over 5 outer folds · {cv.params} parameters · <strong className="text-foam">raw images only — no augmented image enters any fold.</strong></p>
+
+      <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <Reveal><div className="card h-full p-6">
+          <h3 className="font-semibold">Protocol at a glance</h3>
+          <ul className="mt-3 space-y-1.5 text-sm text-mist">
+            <li>• Train-time transforms generated on the fly <em>after</em> the split: random resized crop, flips, rotation ≤ 20°, colour jitter, blur (p = 0.2).</li>
+            <li>• Validation/test images: resize + centre-crop only.</li>
+            <li>• Weighted random sampler, inverse to class frequency.</li>
+            <li>• AdamW, cosine schedule, batch 32, 224×224 inputs, gradient clipping 1.0, seed 42.</li>
+            <li>• Inner loop chose among 3 configurations (lr 1e-4 → 5e-4, dropout 0.30–0.40, 3–4 epochs); the third won in four of five folds.</li>
+          </ul>
+        </div></Reveal>
+        <Reveal delay={90}><div className="card h-full border-amber/30 p-6">
+          <h3 className="font-semibold text-amber">How to read these numbers</h3>
+          <ul className="mt-3 space-y-1.5 text-sm text-mist">
+            <li>• Accuracy and balanced accuracy sit within a fifth of a point, so the classifier is not riding on the big classes.</li>
+            <li>• Folds split individual images, not collection sessions; same-visit specimens look alike, so scores may be slightly inflated.</li>
+            <li>• Goti (43 images) reaches 0.94 — encouraging, but a thin basis for any claim.</li>
+            <li>• Not a model benchmark: a fair architecture comparison would need identical protocols across ResNet, EfficientNet and transformers.</li>
+          </ul>
+        </div></Reveal>
+      </div>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-2">
         <Reveal><div className="card h-full p-6"><h3 className="font-semibold">Performance across outer folds</h3><p className="mb-4 text-sm text-mist">No reliance on a single favourable split.</p><FoldChart /></div></Reveal>

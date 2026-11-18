@@ -21,7 +21,7 @@ export function Nutrition() {
   return (
     <Section id="nutrition" eyebrow="Nutritional metadata" className="!pt-0"
       title="Every species carries 12 nutrient values."
-      intro="Values are per 100 g edible portion, compiled from the published literature and reviewed by a certified nutrition professional. Pick a nutrient to rank all 23 species.">
+      intro="Per 100 g edible portion, compiled by a practising nutritionist from five published Bangladeshi and FAO sources. Where sources disagreed the Bangladeshi one was kept; where none reported a value the field is ND rather than filled in from a related species. Pick a nutrient to rank all 23 species.">
       <div role="tablist" aria-label="Nutrient" className="flex flex-wrap gap-2">
         {nutrients.map((x) => (
           <button key={x.key} role="tab" aria-selected={key === x.key} onClick={() => setKey(x.key)}
@@ -44,8 +44,12 @@ export function Nutrition() {
             </li>
           ))}
         </ul>
-        <p className="mt-5 text-xs text-mist/70">ND = not detected. Nutrient content varies by season, life-cycle stage and environment — treat values as structured reference metadata, not exact per-specimen measurements.</p>
+        <p className="mt-5 text-xs text-mist/70">ND = no reference value found (hence the sparse vitamin B12 column). These are compiled reference values, not laboratory measurements of the photographed fish; content varies with season, life stage and environment.</p>
       </div>
+
+      <p className="mt-5 rounded-xl border border-amber/40 bg-amber/10 p-4 text-sm text-amber">
+        <strong>One proxy row:</strong> no composition data was found for <em>Batasio tengana</em> (Paloa Tengra), so its row carries the values reported for <em>Mystus vittatus</em>, a bagrid catfish of comparable size and feeding habit. It is flagged as a proxy in the CSV.
+      </p>
 
       <div className="mt-6 flex items-center justify-between">
         <button className="btn btn-ghost" onClick={() => setShowTable(!showTable)} aria-expanded={showTable}>{showTable ? "Hide" : "Show"} full table</button>
@@ -58,7 +62,7 @@ export function Nutrition() {
             <tbody>
               {fish.map((f) => (
                 <tr key={f.slug}>
-                  <td><span className="font-semibold">{f.name}</span><br /><em className="text-xs text-mist">{f.sci}</em></td>
+                  <td><span className="font-semibold">{f.name}{f.proxy && <span className="text-amber" title="Proxy values"> *</span>}</span><br /><em className="text-xs text-mist">{f.sci}</em></td>
                   {nutrients.map((x) => <td key={x.key}>{f.nut[x.key] ?? f.flags[x.key] ?? "—"}</td>)}
                 </tr>
               ))}
