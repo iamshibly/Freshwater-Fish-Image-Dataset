@@ -206,5 +206,9 @@
  "plot:outliers": [
   2400,
   1627
+ ],
+ "plot:pipeline": [
+  970,
+  870
  ]
 }

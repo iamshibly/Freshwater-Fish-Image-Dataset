@@ -8,10 +8,24 @@ export const site = {
   conferenceFull: "3rd International Conference on Machine Intelligence and Emerging Technologies (MIET 2026)",
   venue: "Noakhali Science and Technology University, Noakhali, Bangladesh",
   dates: "October 8–9, 2026",
-  authors: "Anonymous Author(s)", // TODO: replace once the camera-ready author list is public
+  authors: "Tanvir Ahmod, Md. Zubayer Ahmad Shibly, Md. Maruf Hassan, Touhid Bhuiyan and Tanjina Noushin",
+  authorList: [
+    { name: "Tanvir Ahmod", aff: 1 },
+    { name: "Md. Zubayer Ahmad Shibly", aff: 1 },
+    { name: "Md. Maruf Hassan", aff: 1, corresponding: true },
+    { name: "Touhid Bhuiyan", aff: 2, orcid: "0000-0002-6747-0846" },
+    { name: "Tanjina Noushin", aff: 3 },
+  ],
+  affiliations: [
+    "Southeast University, Bangladesh",
+    "School of Information Technology, Washington University of Science and Technology",
+    "School of Business, Washington University of Science and Technology",
+  ],
   year: "2026",
   links: {
-    drive: "https://drive.google.com/file/d/1OhmyKxcqPe6FMafaNCIP1Pb4VP97VvIR/view?usp=drive_link",
+    kaggle: "https://doi.org/10.34740/KAGGLE/DSV/16153864", // permanent DOI cited in the paper's Data Availability section
+    doi: "10.34740/KAGGLE/DSV/16153864",
+    drive: "https://drive.google.com/file/d/1OhmyKxcqPe6FMafaNCIP1Pb4VP97VvIR/view?usp=drive_link", // mirror
     github: "https://github.com/iamshibly/Freshwater-Fish-Image-Dataset",
     githubCode:
       "https://github.com/iamshibly/Freshwater-Fish-Image-Dataset/tree/main/Validation%20Code%20and%20Plots",

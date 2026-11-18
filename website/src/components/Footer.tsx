@@ -8,13 +8,13 @@ export function Footer() {
           <p className="mt-1 max-w-md">{site.tagline}. For academic and research use — check the licence/permission statement in the dataset archive before commercial use.</p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2">
-          <a className="hover:text-white" href={site.links.drive} target="_blank" rel="noopener noreferrer">Dataset</a>
+          <a className="hover:text-white" href={site.links.kaggle} target="_blank" rel="noopener noreferrer">Dataset (Kaggle DOI)</a>
           <a className="hover:text-white" href={site.links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           <a className="hover:text-white" href={`${site.links.github}/issues`} target="_blank" rel="noopener noreferrer">Questions / issues</a>
         </div>
       </div>
       <p className="border-t border-line px-5 py-4 text-center text-xs text-mist/70">
-        Species nutritional values were reviewed by an independent nutrition professional. © {site.year} {site.name} authors.
+        Acknowledgement: the authors thank Umme Salma Hasan, M.Sc. in Food and Nutrition (Inspiron Fitness &amp; Diet Consultancy Center), who compiled and reviewed the species-level nutritional metadata. · {site.conferenceFull}, {site.venue}, {site.dates}.
       </p>
     </footer>
   );

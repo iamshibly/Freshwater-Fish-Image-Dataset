@@ -30,7 +30,7 @@ export function Nav() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <a href={site.links.drive} target="_blank" rel="noopener noreferrer" className="btn btn-primary !py-2 !px-4 !text-sm">Download</a>
+          <a href={site.links.kaggle} target="_blank" rel="noopener noreferrer" className="btn btn-primary !py-2 !px-4 !text-sm">Download</a>
           <button className="btn btn-ghost !px-3 !py-2 lg:hidden" aria-label="Menu" aria-expanded={open} onClick={() => setOpen(!open)}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={open ? "M6 6l12 12M18 6L6 18" : "M4 7h16M4 12h16M4 17h16"} /></svg>
           </button>

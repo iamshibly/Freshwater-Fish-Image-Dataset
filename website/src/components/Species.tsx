@@ -46,7 +46,12 @@ function Detail({ f, onClose }: { f: Fish; onClose: () => void }) {
               </div>
             ))}
           </dl>
-          <p className="mt-4 text-xs text-mist/70">ND = not detected. Species-level reference values; they vary with season, life stage and environment.</p>
+          {f.proxy && (
+            <p className="mt-4 rounded-lg border border-amber/40 bg-amber/10 p-3 text-sm text-amber">
+              <strong>Proxy row.</strong> No published composition data exists for {f.sci}; these values are those reported for <em>{f.proxy}</em>, a bagrid catfish of comparable size and feeding habit. The released CSV flags it as a proxy.
+            </p>
+          )}
+          <p className="mt-4 text-xs text-mist/70">ND = no reference value found. Values are compiled reference values, not laboratory measurements of the photographed fish, and vary with season, life stage and environment.</p>
         </div>
       </div>
     </div>
@@ -65,7 +70,7 @@ export function Species() {
   }, [q, sort]);
   return (
     <Section id="species" eyebrow="Species explorer" title="Meet all 23 species."
-      intro="One representative photograph per species, labelled with its local Bengali name and scientific name. Open any card for class sizes, baseline accuracy and its full nutrient profile.">
+      intro="One representative photograph per species, labelled with its local name and scientific name (matched against Rahman’s reference). Open any card for class sizes, baseline F1 and its nutrient profile.">
       <div className="mb-8 flex flex-wrap items-center gap-3">
         <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by local or scientific name…" aria-label="Search species"
           className="w-full max-w-sm rounded-full border border-line bg-white/5 px-5 py-2.5 text-sm outline-none placeholder:text-mist/60 focus:border-teal" />
@@ -89,7 +94,7 @@ export function Species() {
                 <span className="font-mono text-xs text-mist/60">#{f.id}</span>
               </div>
               <p className="truncate text-xs italic text-mist">{f.sci}</p>
-              <p className="mt-2 text-xs text-mist/80">{f.raw} raw · F1 {f.f1.toFixed(2)}</p>
+              <p className="mt-2 text-xs text-mist/80">{f.raw} raw · F1 {f.f1.toFixed(2)}{f.proxy && <span className="ml-1 text-amber" title="Nutrition values are a proxy">· proxy nutrition</span>}</p>
             </div>
           </button>
         ))}

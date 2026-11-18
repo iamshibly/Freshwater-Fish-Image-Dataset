@@ -19,18 +19,26 @@ export function Hero() {
           <span className="text-3xl font-normal text-foam/90 md:text-5xl">Freshwater fish, seen and nourished.</span>
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-mist md:text-xl">
-          The first image dataset of small indigenous Bangladeshi fish paired with species-level
-          nutritional values — <strong className="text-foam">23 species</strong>, real market photographs,
-          and open code to reproduce every plot.
+          An image dataset of small indigenous Bangladeshi fish, with every species paired to a nutrition record —
+          <strong className="text-foam"> 23 species</strong>, photographed in working markets, with a
+          nested cross-validation baseline that tests whether the labels hold up.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
-          <a className="btn btn-primary" href={site.links.drive} target="_blank" rel="noopener noreferrer">Download dataset ↓</a>
-          <a className="btn btn-ghost" href="#code">Get the code</a>
+          <a className="btn btn-primary" href={site.links.kaggle} target="_blank" rel="noopener noreferrer">Download dataset ↓</a>
+          <a className="btn btn-ghost" href="#paper">Read the paper</a>
           <a className="btn btn-ghost" href={site.links.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          {site.links.paper && <a className="btn btn-ghost" href={site.links.paper} target="_blank" rel="noopener noreferrer">Read the paper ↗</a>}
+          
         </div>
 
-        <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">
+        <p className="mt-8 max-w-3xl text-sm leading-relaxed text-mist">
+          {site.authorList.map((a, i) => (
+            <span key={a.name}>{a.name}<sup>{a.aff}{"corresponding" in a && a.corresponding ? "⋆" : ""}</sup>{i < site.authorList.length - 1 ? ", " : ""}</span>
+          ))}
+          <br />
+          <span className="text-mist/70">{site.affiliations.map((x, i) => `${i + 1} ${x}`).join(" · ")}</span>
+        </p>
+
+        <dl className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">
           {[
             { n: site.stats.species, l: "fish species" },
             { n: site.stats.raw, l: "raw market images" },

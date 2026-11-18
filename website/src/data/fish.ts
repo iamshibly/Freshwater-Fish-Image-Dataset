@@ -10,6 +10,7 @@ export interface Fish {
   raw: number; aug: number; f1: number;
   nut: Record<NutrientKey, number | null>;
   flags: Partial<Record<NutrientKey, string>>;
+  proxy?: string; // nutrition row borrowed from another species (no published data)
 }
 
 export const fish = raw as Fish[];
