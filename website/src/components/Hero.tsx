@@ -10,8 +10,9 @@ export function Hero() {
         <div className="inline-flex items-center gap-2 rounded-full border border-line bg-white/5 px-4 py-1.5 text-sm text-mist">
           <span className="h-2 w-2 rounded-full bg-amber" />
           Accepted at <strong className="text-foam">{site.conference}</strong>
-          <span className="opacity-40">·</span> Bangladesh · {site.year}
+          <span className="opacity-40">·</span> {site.dates}
         </div>
+        <p className="mt-3 max-w-2xl text-sm text-mist/80">{site.conferenceFull} — {site.venue}</p>
         <h1 className="font-display mt-7 max-w-4xl text-5xl font-semibold leading-[1.05] md:text-7xl">
           <span className="grad-text">{site.name}</span>
           <br />
