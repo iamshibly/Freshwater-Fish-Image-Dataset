@@ -32,7 +32,16 @@ export function Hero() {
 
         <p className="mt-8 max-w-3xl text-sm leading-relaxed text-mist">
           {site.authorList.map((a, i) => (
-            <span key={a.name}>{a.name}<sup>{a.aff}{"corresponding" in a && a.corresponding ? "⋆" : ""}</sup>{i < site.authorList.length - 1 ? ", " : ""}</span>
+            <span key={a.name}>
+              {a.name === "Md. Zubayer Ahmad Shibly" ? (
+                <strong className="rounded-md border border-teal/30 bg-teal/10 px-1.5 py-0.5 font-semibold text-teal">
+                  {a.name}
+                </strong>
+              ) : (
+                a.name
+              )}
+              <sup>{a.aff}{"corresponding" in a && a.corresponding ? "⋆" : ""}</sup>{i < site.authorList.length - 1 ? ", " : ""}
+            </span>
           ))}
           <br />
           <span className="text-mist/70">{site.affiliations.map((x, i) => `${i + 1} ${x}`).join(" · ")}</span>
