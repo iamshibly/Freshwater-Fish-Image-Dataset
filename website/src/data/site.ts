@@ -4,7 +4,10 @@ export const site = {
   tagline: "A multimodal freshwater fish image dataset with nutritional metadata",
   title:
     "A Multimodal Freshwater Fish Image Dataset with Nutritional Metadata for Computer Vision-Based Species Recognition in Bangladesh",
-  conference: "MIET", // TODO: replace with the full conference name if desired
+  conference: "MIET 2026",
+  conferenceFull: "3rd International Conference on Machine Intelligence and Emerging Technologies (MIET 2026)",
+  venue: "Noakhali Science and Technology University, Noakhali, Bangladesh",
+  dates: "October 8–9, 2026",
   authors: "Anonymous Author(s)", // TODO: replace once the camera-ready author list is public
   year: "2026",
   links: {
@@ -25,6 +28,7 @@ export const nav = [
   { id: "species", label: "Species" },
   { id: "nutrition", label: "Nutrition" },
   { id: "validation", label: "Validation" },
+  { id: "paper", label: "Paper" },
   { id: "code", label: "Code" },
   { id: "get", label: "Get the data" },
 ];

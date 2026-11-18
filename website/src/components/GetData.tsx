@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 const bibtex = `@inproceedings{nutrifishbd${site.year},
   title     = {A Multimodal Freshwater Fish Image Dataset with Nutritional Metadata for Computer Vision-Based Species Recognition in Bangladesh},
   author    = {${site.authors}},
-  booktitle = {${site.conference}},
+  booktitle = {${site.conferenceFull}},
   year      = {${site.year}},
   note      = {Dataset and code: ${site.links.github}}
 }`;
