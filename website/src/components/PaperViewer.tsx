@@ -6,7 +6,7 @@ const N = 15;
 const landscape = new Set([6]); // Table 3 page is rotated to landscape
 const titles: Record<number, string> = {
   1: "Abstract & introduction", 2: "Contributions & related work", 3: "Dataset description", 4: "Species collage", 5: "Class distribution",
-  6: "Nutritional metadata (Table 3)", 7: "Augmentation", 8: "Evaluation protocol", 9: "Nested CV results", 10: "Embedding 9: "Nested CV results", clustering",
+  6: "Nutritional metadata (Table 3)", 7: "Augmentation", 8: "Evaluation protocol", 9: "Nested CV results", 10: "Embeddings & clustering",
   11: "UMAP & FlowSOM", 12: "Visualisation summary", 13: "Limitations", 14: "Conclusion & availability", 15: "References",
 };
 const src = (n: number) => `/paper/page-${String(n).padStart(2, "0")}.webp`;
